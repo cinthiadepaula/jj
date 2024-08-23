@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+}
+
+/* Estilo do menu */
+header {
+    width: 100%;
+    background-color: white;
+    padding: 15px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 59, 253);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4c542;
+}
+
+/* Estilo da seção do vereador */
+.vereador-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.vereador-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.vereador-image {
+    width: 100%;
+    height: auto;
+    animation: moveVereador 3s ease-in-out infinite alternate;
+}
+
+/* Animação básica */
+@keyframes moveVereador {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+canvas {
+    border: 1px solid #000;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#canvas {
+    max-width: 100%;   /* O canvas nunca será maior que 100% da largura do contêiner */
+    max-height: 500px; /* Limite a altura máxima */
+    display: block;
+    margin: 0 auto;    /* Centralizar o canvas */
+    border: 1px solid #ccc; /* Opcional: Adicionar uma borda ao redor do canvas */
+}
+
+#canvas-container {
+    width: 100%;
+    max-width: 600px;  /* Limitar o tamanho máximo do contêiner */
+    margin: 0 auto;    /* Centralizar o contêiner na página */
+}
+/* Ocultar o input original */
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+/* Estilo do botão customizado */
+.custom-file-upload label {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Ícone de upload */
+.custom-file-upload .upload-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Efeito ao passar o mouse */
+.custom-file-upload label:hover {
+    background-color: #45a049;
+}
+/* Estilo do botão de download */
+.custom-download-btn {
+    display: none; /* Inicialmente escondido */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Ícone de download */
+.custom-download-btn .download-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Efeito hover */
+.custom-download-btn:hover {
+    background-color: #007bb5;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #f1f1f1; /* Cor de fundo do rodapé */
+    padding: 15px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil na parte superior do rodapé */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+}
+
+/* Estilo do texto no rodapé */
+footer p {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 10px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
