@@ -28,11 +28,17 @@ document.getElementById('imageInput').addEventListener('change', function() {
 
             // Aguarde até a marca d'água carregar completamente
             watermark.onload = function() {
-                const watermarkWidth = img.width;  // Ajusta o tamanho da marca d'água para cobrir toda a imagem
-                const watermarkHeight = img.height;
+                // Proporção da marca d'água em relação à imagem original
+                const watermarkRatio = 1.0;  // Ajuste essa proporção conforme necessário
+                const watermarkWidth = img.width * watermarkRatio;
+                const watermarkHeight = watermark.height * (watermarkWidth / watermark.width);
+                
+                // Posicionamento da marca d'água no centro da imagem
+                const posX = (img.width - watermarkWidth) / 2;
+                const posY = (img.height - watermarkHeight) / 1.0;
                 
                 ctx.globalAlpha = 1.0;  // Ajuste de opacidade da marca d'água (pode variar entre 0 e 1)
-                ctx.drawImage(watermark, 0, 0, watermarkWidth, watermarkHeight);
+                ctx.drawImage(watermark, posX, posY, watermarkWidth, watermarkHeight);
                 ctx.globalAlpha = 1.0;
                 
                  // Exibir o botão de download após o upload e renderização

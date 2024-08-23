@@ -13,6 +13,12 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     align-items: center;
 }
+h1{
+    color: #0067b0;
+}
+h4, h6{
+    color: #333;
+}
 
 
 nav ul {
@@ -70,7 +76,7 @@ nav ul li a:hover {
     }
 }
 canvas {
-    border: 1px solid #000;
+    border: 0.5px solid #000;
     margin-top: 20px;
     max-width: 100%;
 }
@@ -104,7 +110,7 @@ button {
     display: inline-flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #00437d;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -117,11 +123,13 @@ button {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+   color: white;
+   
 }
 
 /* Efeito ao passar o mouse */
 .custom-file-upload label:hover {
-    background-color: #45a049;
+    background-color: #0264b9;
 }
 /* Estilo do botão de download */
 .custom-download-btn {
