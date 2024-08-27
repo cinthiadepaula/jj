@@ -23,7 +23,7 @@
         </div>
     </section>
     <h1>João Jorge</h1>
-    <h4>Personalize seu perfil em apoio ao João Jorge</h4>
+    <h4>Personalize seu perfil em apoio ao João Jorge, um vereador comprometido com Estado de São Paulo</h4>
     <h6>Carregue uma foto de sua galeria!</h6>
     <div class="custom-file-upload">
         <label for="imageInput">
@@ -38,12 +38,18 @@
     <br><br>
     <canvas id="canvas" width="1080" height="1080"></canvas>
     <br><br>
-    <label for="zoomRange">Zoom:</label>
+    
     <div class="btn">
-        <input type="range" id="zoomRange" min="0.1" max="3" step="0.1" value="1">
-
-        <label for="positionYRange">Ajuste a posição Y da imagem:</label>
-        <input type="range" id="positionYRange" min="-500" max="500" step="1" value="0">
+        <div class="btn-just">
+            <label class="btn-img" for="zoomRange">Zoom:</label>
+            <input type="range" id="zoomRange" min="0.1" max="3" step="0.1" value="1">
+        </div>
+       
+        <div class="btn-just">
+            <label class="btn-img"  for="positionYRange">Ajuste a posição:</label>
+            <input    type="range" id="positionYRange" min="-500" max="500" step="1" value="0">
+        </div>
+        
         
     </div>
 

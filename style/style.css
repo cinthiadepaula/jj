@@ -146,6 +146,24 @@ h4{
     background-color: #007bb5;
 }
 
+.btn{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    
+}
+
+.btn-just{
+    display: flex;
+    align-items: center;
+}
+.btn-img{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
 /* Rodapé */
 footer {
     background-color: #f1f1f1;
