@@ -32,17 +32,28 @@
         </label>
         <input type="file" id="imageInput">
     </div>
-    
+
+
+    <section class="upload-section">
     <br><br>
     <canvas id="canvas" width="1080" height="1080"></canvas>
     <br><br>
     <label for="zoomRange">Zoom:</label>
-<input type="range" id="zoomRange" min="0.1" max="3" step="0.1" value="1">
+    <div class="btn">
+        <input type="range" id="zoomRange" min="0.1" max="3" step="0.1" value="1">
+
+        <label for="positionYRange">Ajuste a posição Y da imagem:</label>
+        <input type="range" id="positionYRange" min="-500" max="500" step="1" value="0">
+        
+    </div>
+
 
     <button id="downloadBtn" class="custom-download-btn" style="display: none;">
         <img src="assets/download.svg" alt="Download Ícone" class="download-icon">
         Baixar Imagem
     </button>
+    
+</section>
     <footer>
         <h5>CNPJ DO CANDIDATO 56.309.704/0001-03</h5>
         <h6>Comunicação 2024</h6>
