@@ -7,7 +7,7 @@ document.getElementById('imageInput').addEventListener('change', function() {
     const reader = new FileReader();
 
     watermark = new Image();
-    watermark.src = 'assets/marca_dagua3.png';
+    watermark.src = 'assets/marca_dagua4.png';
 
     reader.onload = function(e) {
         img = new Image();
@@ -62,6 +62,8 @@ function drawCanvas(ctx, canvas, img, watermark, imgX, imgY, imgScale) {
         const posY = canvas.height - watermarkHeight;
         ctx.globalAlpha = 1.0;
         ctx.drawImage(watermark, posX, posY, watermarkWidth, watermarkHeight);
+
+       
     }
 }
 

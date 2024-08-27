@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
-    padding: -20;
+    padding: 0; /* Corrigido o padding */
 }
 
 /* Header e Navegação */
@@ -23,14 +23,14 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Alterado para inline-block para melhor controle em mobile */
+    margin: 0 10px; /* Reduzido para melhor ajuste em telas menores */
 }
 
 nav ul li a {
     color: rgb(0, 59, 253);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px; /* Tamanho da fonte reduzido para melhor ajuste */
     transition: color 0.3s ease;
 }
 
@@ -51,13 +51,14 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55vh;
+    height: 50vh; /* Ajustado para melhorar em telas menores */
 }
 
 .vereador-container {
     position: relative;
-    width: 300px;
-    height: 320px;
+    width: 80%; /* Ajustado para se adaptar ao tamanho da tela */
+    max-width: 300px; /* Máxima largura para manter a proporção */
+    height: auto; /* Ajustado para manter a proporção */
     overflow: hidden;
 }
 
@@ -87,12 +88,12 @@ h4{
 }
 
 .upload-section {
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    height: auto; /* Ajustado para melhorar em telas menores */
+    padding: 20px; /* Adicionado para evitar que o conteúdo fique grudado nas bordas */
 }
 
 .custom-file-upload input[type="file"] {
@@ -107,7 +108,7 @@ h4{
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px; /* Ajustado para melhor ajuste */
     transition: background-color 0.3s ease;
 }
 
@@ -147,18 +148,19 @@ h4{
 }
 
 .btn{
-    width: 500px;
+    width: 100%; /* Ajustado para telas menores */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Ajustado para melhor layout em telas pequenas */
     align-items: center;
     color: #333;
-    
+    padding: 10px; /* Adicionado padding para espaçamento */
 }
 
 .btn-just{
     display: flex;
     align-items: center;
 }
+
 .btn-img{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -179,4 +181,45 @@ footer h5, footer h6 {
     margin: 0;
     font-size: 12px;
     color: #333;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%; /* Ajusta a largura dos botões em telas menores */
+    }
+
+    .btn-just {
+        flex-direction: column; /* Ajusta a direção dos itens em telas menores */
+    }
+
+    .vereador-section {
+        height: auto; /* Ajusta a altura da seção do vereador em telas menores */
+    }
+
+    .vereador-container {
+        width: 90%; /* Ajusta a largura da imagem do vereador em telas menores */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduz o espaçamento entre itens no menu */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Ajusta o tamanho da fonte no menu */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título principal em telas menores */
+    }
+
+    .custom-file-upload label {
+        font-size: 14px; /* Ajusta o tamanho da fonte do botão de upload em telas menores */
+    }
+
+    .custom-download-btn {
+        font-size: 14px; /* Ajusta o tamanho da fonte do botão de download em telas menores */
+    }
 }
