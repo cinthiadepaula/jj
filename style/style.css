@@ -50,14 +50,15 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .vereador-container {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
+    ;
 }
 
 .vereador-image {
@@ -69,10 +70,10 @@ nav ul li a:hover {
 /* Animação básica */
 @keyframes moveVereador {
     0% {
-        transform: translateY(0);
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-2px);
     }
 }
 canvas {
