@@ -5,7 +5,7 @@ document.getElementById('imageInput').addEventListener('change', function() {
     const reader = new FileReader();
     const watermark = new Image();
     
-    watermark.src = 'assets/marca_dagua2.png';  // Caminho para a sua marca d'água fixa
+    watermark.src = 'assets/marca_dagua3.png';  // Caminho para a sua marca d'água fixa
 
     watermark.onload = function() {
         console.log('Marca d\'água carregada');
