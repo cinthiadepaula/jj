@@ -97,7 +97,7 @@ function stopDragging() {
 document.getElementById('downloadBtn').addEventListener('click', function() {
     const canvas = document.getElementById('canvas');
     const link = document.createElement('a');
-    link.download = 'imagem-com-marca-dagua.png';
+    link.download = 'foto-perfil-apoio-joaojorge.png';
     link.href = canvas.toDataURL('image/png');
     link.click();
 });
